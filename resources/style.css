@@ -36,6 +36,30 @@ h6 {
     transition: font-size 0.25s ease;
 }
 
+h2 {
+    font-size: calc(65px / 1.5);
+    line-height: 0.85;
+    margin-top: 10px;
+}
+
+@media(min-width: 720px) {
+    h1 {
+        font-size: calc(65px / 1.25);
+    }
+    h2 {
+        font-size: calc(65px / 1.25);
+    }
+}
+
+@media(min-width: 1024px) {
+    h1 {
+        font-size: 100px;
+    }
+    h2 {
+        font-size: 60px;
+    }
+}
+
 p {
     font-family: "Playfair Display", Georgia, serif;
     font-size: 16px;
@@ -133,6 +157,12 @@ h1 {
     margin-bottom: 30px;
 }
 
+@media (min-width: 585px) {
+    .photo-hero {
+        min-height: 600px;
+    }
+}
+
 button {
     border: none;
 }
@@ -163,4 +193,56 @@ button:hover {
     color: #ffffff;
     background-color: transparent;
     float: left;
+}
+
+/* PHOTO GRID */
+
+.photo-grid {
+    margin-top: -80px;
+}
+
+.image-box {
+    width: calc(100% - 40px);
+    max-height: 450px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
+    float: left;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 720px) {
+    .photo-hero {
+        min-height: 500px;
+    }
+    .image-box {
+        width: calc(33.3333% - 40px);
+    }
+    .photo-about p, .photo-contact p, .photo-contact-form {
+        padding: 0 20%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .photo-hero {
+        min-height: 700px;
+    }
+    .photo-hero-text {
+        width: 70%;
+        display: block;
+    }
+    .photo-contact-form input {
+        width: 48%;
+        float: left;
+    }
+    .photo-contact-form input:nth-child(1), .photo-contact-form input:nth-child(3) {
+        margin: 0 2% 20px 0;
+    }
+    .photo-contact-form input:nth-child(2), .photo-contact-form input:nth-child(4) {
+        margin: 0 0 20px 2%;
+    }
 }
