@@ -246,3 +246,39 @@ button:hover {
         margin: 0 0 20px 2%;
     }
 }
+
+/* BLOCKQUOTE */
+
+.photo-blockquote {
+    background-color: #41d94b;
+    margin-top: -80px;
+    padding-bottom: 80px;
+}
+
+blockquote p {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 24px;
+    color: #ffffff;
+    line-height: 1.4;
+    text-align: center;
+}
+
+blockquote:before {
+    content: " ";
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 150px;
+    color: #ffffff;
+    line-height: 30px;
+    text-align: center;
+    display: block;
+    padding-top: 40px;
+}
+
+blockquote footer {
+    font-family: "Open Sans", Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #009e0b;
+    text-transform: uppercase;
+    text-align: center;
+}
