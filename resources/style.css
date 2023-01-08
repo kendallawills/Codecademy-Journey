@@ -351,3 +351,17 @@ input {
 textarea {
     width: 100%;
 }
+
+/* FOOTER */
+
+.footer {
+    color: #ffffff;
+    background-color: #18521c;
+    text-align: center;
+    padding: 30px;
+}
+
+.footer-navigation {
+    max-width: 1280px;
+    margin: 0 auto;
+}
